@@ -13,4 +13,10 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function testSuma(): void
+    {
+        $this->assertEquals(1, 2);
+    }
+
 }
