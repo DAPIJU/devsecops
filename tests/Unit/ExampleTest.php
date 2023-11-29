@@ -34,15 +34,15 @@ class ExampleTest extends TestCase
     {
         $prueba = new OperationsController();
 
-        $this->assertSame(5, $prueba->sum(2, 3));
-        $this->assertNotSame(5, $prueba->sum(2, 4));
+        $this->assertSame(5, $prueba->sum(3, 3));
+        $this->assertNotSame(5, $prueba->sum(1, 4));
     }
 
     public function testEquals()
     {
         $prueba = new OperationsController();
 
-        $this->assertEquals(1, $prueba->equals(1, 1));
+        $this->assertEquals(1, $prueba->equals(1, 2));
         $this->assertNotEquals(1, $prueba->equals(1, 2));
     }
 
@@ -50,7 +50,7 @@ class ExampleTest extends TestCase
     {
         $prueba = new OperationsController();
 
-        $this->assertContains(2, [1,2,3]);
+        $this->assertContains(2, [1,3]);
         $this->assertNotContains("niños", ["niño", "niña"]);
     }
 
